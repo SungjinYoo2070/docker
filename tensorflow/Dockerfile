@@ -32,6 +32,7 @@ RUN pip --no-cache-dir install \
         sklearn \
         pandas \
         Pillow \
+	plotly \
         && \
     python -m ipykernel.kernelspec
 
