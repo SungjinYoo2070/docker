@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 
 MAINTAINER Mario Cho <hephaex@gmail.com>
 
-# Pick up some TF dependencies
+# dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
         build-essential \
         curl \
@@ -24,6 +24,7 @@ RUN curl -O https://bootstrap.pypa.io/get-pip.py && \
     rm get-pip.py
 
 RUN pip --no-cache-dir install \
+	h5py \
         ipykernel \
         jupyter \
         matplotlib \
